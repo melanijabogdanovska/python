@@ -5,16 +5,16 @@ def avg (lst, mnozitel='1'):
         print('Mnozitel must be a number')
         return
 
-    mnozitel = int(mnozitel)
-    counter = 0
-    sum = 0
+    mnozitel=int(mnozitel)
+    counter=0
+    sum=0
 
     for element in lst:
         if type(element)==int or type(element)==float or element.isnumeric():
-            element = int(element)
+            element=int(element)
             sum += element * mnozitel
             counter += 1
-    if counter == 0:
+    if counter==0:
         print('Error')
         return
 
